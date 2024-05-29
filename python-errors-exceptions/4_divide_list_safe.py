@@ -6,12 +6,11 @@ def divide_list_safe(list_1, list_2, list_len):
             res_list.append(list_1[i]/list_2[i])
         except TypeError:
             print("wrong type")
-            res_list.append(0)
         except ZeroDivisionError:
             print("division by 0")
-            res_list.append(0)
         except IndexError:
             print("out of range")
+        finally:
             res_list.append(0)
        
     return res_list
