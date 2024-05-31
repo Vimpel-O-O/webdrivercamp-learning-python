@@ -2,7 +2,7 @@
 def divide_safe(a, b):
 	try:
 		result = a / b
-	except:
+	except ZeroDivisionError:
 		result = None
 	finally:
 		print(f"Result: {result}")

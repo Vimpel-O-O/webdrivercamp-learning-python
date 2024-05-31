@@ -7,7 +7,7 @@ def list_print(lst=[], i=0):
 			result += str(lst[n])
 			num = n
 		print(result)
-	except:
+	except IndexError:
 		print(result)
 	return num + 1
 	

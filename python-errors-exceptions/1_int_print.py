@@ -3,7 +3,7 @@ def int_print(value):
 	try:
 		print(f"{value:d}")
 		return True
-	except:
+	except ValueError:
 		return False
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ def list_int_print(lst=[], i=0):
 			result += 1
 		except (TypeError, ValueError):
 			pass
-	print("")
+	print()
 	return result
 
 if __name__=="__main__":

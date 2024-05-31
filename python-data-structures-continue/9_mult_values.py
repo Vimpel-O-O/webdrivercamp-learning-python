@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def mult_values(d):
-	for i, j in d.items():
-		d[i] = j * 2
+	for key, value in d.items():
+		d[key] = value * 2
 	return d
 if __name__=="__main__":
     dict_print = __import__('6_dict_print').dict_print
